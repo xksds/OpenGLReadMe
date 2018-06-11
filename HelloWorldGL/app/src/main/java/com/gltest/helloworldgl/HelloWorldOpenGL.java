@@ -15,7 +15,9 @@ public class HelloWorldOpenGL extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); // (NEW)
 
         GLSurfaceView view = new GLSurfaceView(this);
-        view.setRenderer(new ColorOpenGLRenderer());
+//        view.setRenderer(new OpenGLRenderer());
+//        view.setRenderer(new ColorOpenGLRenderer());
+        view.setRenderer(new ShapeGLRenderer());
         setContentView(view);
     }
 }
