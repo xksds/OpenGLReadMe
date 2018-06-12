@@ -22,11 +22,23 @@ public class SimplePlane extends Mesh {
      */
     public SimplePlane(float width, float height) {
         // Mapping coordinates for the vertices
-        float textureCoordinates[] = { 0.0f, 2.0f, //
-                2.0f, 2.0f, //
+        float textureCoordinates[] = { 0.0f, 3.0f, //
+                3.0f, 3.0f, //
                 0.0f, 0.0f, //
-                2.0f, 0.0f, //
+                3.0f, 0.0f, //
         };
+
+//        float textureCoordinates[] = { 0.0f, 2.0f, //
+//                2.0f, 2.0f, //
+//                0.0f, 0.0f, //
+//                2.0f, 0.0f, //
+//        };
+
+//        float textureCoordinates[] = { 0.0f, 1.0f, //
+//                1.0f, 1.0f, //
+//                0.0f, 0.0f, //
+//                1.0f, 0.0f, //
+//        };
 
         short[] indices = new short[] { 0, 1, 2, 1, 3, 2 };
 

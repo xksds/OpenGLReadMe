@@ -5,8 +5,9 @@ import android.graphics.BitmapFactory;
 import android.opengl.GLSurfaceView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
+import android.util.DisplayMetrics;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import com.gltest.helloworldgl.Mesh.SimplePlane;
 
@@ -35,10 +36,11 @@ public class HelloWorldOpenGL extends AppCompatActivity {
     private void LoadBitmap2Plane() {
         SimplePlane plane = new SimplePlane(1, 1);
         // Move and rotate the plane.
-        plane.z = 1.7f;
-        plane.rx = -65;
+//        plane.z = 1.7f;
+//        plane.rx = -65;
         // Load the texture.
-        Bitmap bp = BitmapFactory.decodeFile("/storage/emulated/0/MyDocs/LiveTest/nio.png");
+//        Bitmap bp = BitmapFactory.decodeFile("/storage/emulated/0/MyDocs/LiveTest/nio.png");
+        Bitmap bp = BitmapFactory.decodeFile("/storage/emulated/0/MyDocs/LiveTest/nio.jpg");
         plane.loadBitmap(bp);
         // Add the plane to the renderer.
         renderer.addMesh(plane);

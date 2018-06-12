@@ -77,7 +77,7 @@ public class BitmapRenderer implements Renderer {
         gl.glLoadIdentity();
         // Calculate the aspect ratio of the window
         GLU.gluPerspective(gl, 45.0f, (float) width / (float) height, 0.1f,
-                1000.0f);
+                100.0f);
         // Select the modelview matrix
         gl.glMatrixMode(GL10.GL_MODELVIEW);
         // Reset the modelview matrix
